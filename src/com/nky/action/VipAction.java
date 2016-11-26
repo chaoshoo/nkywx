@@ -64,7 +64,7 @@ public class VipAction extends WxBaseAction{
 				if(!PubMethod.isEmpty(r.get("SYS")) && !PubMethod.isEmpty(r.get("DIA"))){
 					//如果是血压 则显示在一起	
 					m.put("code","DIASYS");
-					m.put("name", "血压");
+					m.put("name", "blood pressure");
 					m.put("value",r.get("DIA")+"/"+r.get("SYS"));
 				}else{
 					for (String s :sets) {

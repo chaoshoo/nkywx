@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>居民健康管理服务平台</title>
+<title>Residents health management service platform</title>
 <meta name="meituan_check">
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -35,7 +35,7 @@
 <body id="account">
 <header class="navbar">
   <div class="nav-wrap-left"> <a class="react back" href="<%=path %>/index/homepage.html" ><i class="text-icon icon-back"></i></a> </div>
-  <span class="nav-header h1">我的信息</span>
+  <span class="nav-header h1">My message</span>
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
   <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
   </a> </div>
@@ -43,56 +43,56 @@
 <a href="#"  style="display:block">
 <div class="index-top"> <img src="${heard_img_url}" width="100">
   <div class="username white">${vip.nick_name}</div>
-  <div class="userinfo"><span class="white">${vip.sexstr}</span>&nbsp;&nbsp;<span class="white">${vip.age}岁</span>&nbsp;&nbsp;<span class="white">${vip.areaname}</span></div>
+  <div class="userinfo"><span class="white">${vip.sexstr}</span>&nbsp;&nbsp;<span class="white">${vip.age}year</span>&nbsp;&nbsp;<span class="white">${vip.areaname}</span></div>
 </div>
 </a>
 <dl class="list"  style=" border-top:none;border-bottom:none;">
   <dd><a class="react" href="#" onclick="history('yuyue')">
-    <div class="more more-weak" > <i class="text-icon order-jiudian order-icon">约</i>我的预约<!--<span class="status_ready"></span> <span class="more-after"></span> --> 
+    <div class="more more-weak" > <i class="text-icon order-jiudian order-icon">about</i>我的预about<!--<span class="status_ready"></span> <span class="more-after"></span> --> 
     </div>
     </a></dd>
 </dl>
 <dl class="list"  style=" border-top:none;border-bottom:none;">
   <dd><a class="react" href="#" onclick="history('liuyan')">
-    <div class="more more-weak"> <i class="text-icon order-jiudian order-icon" style="background:#8ce88e;">留</i>我的留言<!--<span class="status_ready"></span>  <span class="more-after"></span> --> 
+    <div class="more more-weak"> <i class="text-icon order-jiudian order-icon" style="background:#8ce88e;">stay</i>我的stay言<!--<span class="status_ready"></span>  <span class="more-after"></span> --> 
     </div>
     </a></dd>
 </dl>
 <dl class="list"  style=" border-top:none;border-bottom:none;">
   <dd><a class="react" href="#" onclick="doctor()">
-    <div class="more more-weak"> <i class="text-icon order-jiudian order-icon" style="background:#3cd9b3;">医</i>我的医生<!--<span class="status_ready"></span>  <span class="more-after"></span> --> 
+    <div class="more more-weak"> <i class="text-icon order-jiudian order-icon" style="background:#3cd9b3;">medicine</i>我的medicine生<!--<span class="status_ready"></span>  <span class="more-after"></span> --> 
     </div>
     </a></dd>
 </dl>
 <dl class="list"  style=" border-top:none;border-bottom:none;">
   <dd><a class="react" href="#" onclick="member();">
-    <div class="more more-weak"> <i class="text-icon order-lottery order-icon">家</i>我的家庭成员 </div>
+    <div class="more more-weak"> <i class="text-icon order-lottery order-icon">home</i>我的home庭成员 </div>
     </a></dd>
 </dl>
 <dl class="list"  style=" border-top:none;border-bottom:none;">
   <dd><a class="react" href="#" onclick="guahao();">
-    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#6e65f5;">挂</i>我的挂号 </div>
+    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#6e65f5;">hang</i>我的hang号 </div>
     </a></dd>
 </dl>
 <!-- 
 <dl class="list"  style=" border-top:none;border-bottom:none;">
   <dd><a class="react" href="#" onclick="bingli();">
-    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#9e95f5;">病</i>我的病历 </div>
+    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#9e95f5;">illness</i>我的illness历 </div>
     </a></dd>
 </dl> -->
 <dl class="list"  style=" border-top:none;border-bottom:none;">
   <dd><a class="react" href="#" onclick="updateuser()">
-    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#5e95f5;">改</i>个人资料</div>
+    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#5e95f5;">change</i>personal data</div>
     </a></dd>
 </dl>
 <dl class="list"  style=" border-top:none;border-bottom:none;">
   <dd><a class="react" href="#" onclick="findPWD()">
-    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#9d55b8;">改</i>修改密码</div>
+    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#9d55b8;">change</i>修change密码</div>
     </a></dd>
 </dl>
 <dl class="list"  style=" border-top:none;border-bottom:none;">
   <dd><a class="react" href="#" onclick="exit()">
-    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#c0b5c8;">退</i>退出登录</div>
+    <div class="more more-weak"> <i class="text-icon order-lottery order-icon" style="background:#c0b5c8;">retreat</i>retreat出登录</div>
     </a></dd>
 </dl>
 <script>

@@ -64,7 +64,7 @@ public class WxOauthApiImpl implements WxOauthApi {
             result = SimpleHttpReq.get(url);
         } catch (IOException e) {
         	e.printStackTrace();
-            log.error("刷新ACCESS_TOKEN时出现异常!!!");
+            log.error("RefreshACCESS_TOKEN时出现异常!!!");
             log.error(e.getLocalizedMessage(), e);
         }
 

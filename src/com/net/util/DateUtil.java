@@ -187,7 +187,7 @@ public class DateUtil extends DateSupport {
 	        }  
 	        if(!(arg1 instanceof String))  
 	        {  
-	          throw new ConversionException("只支持字符串转换 !");  
+	          throw new ConversionException("Only support string conversion !");  
 	        }  
 	        String str = (String)arg1;  
 	        if(str.trim().equals(""))  

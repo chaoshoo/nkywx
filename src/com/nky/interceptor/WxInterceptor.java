@@ -41,9 +41,9 @@ public class WxInterceptor implements HandlerInterceptor{
 		if(!PubMethod.isEmpty(uri)  &&  uri.startsWith("/nkywx/customer") 
 				&& !uri.endsWith("/index/toLogin.html")//登录界面
 				&& !uri.endsWith("/index/login.json")//登录验证密码
-				&& !uri.endsWith("/index/updatePWD.html")//修改密码
-				&& !uri.endsWith("/index/sendYZM.html")//获取验证码
-				&& !uri.endsWith("/index/findPSW.html")){//找回密码
+				&& !uri.endsWith("/index/updatePWD.html")//Change password
+				&& !uri.endsWith("/index/sendYZM.html")//Get verification code
+				&& !uri.endsWith("/index/findPSW.html")){//Retrieve password
 			if(isLogin(request)){
 				return true;
 			}else{
@@ -59,7 +59,7 @@ public class WxInterceptor implements HandlerInterceptor{
 	
 	private boolean isLogin(HttpServletRequest request) {
 		Object pharmacistEntity = request.getSession().getAttribute(Constants.CUSTOMER_SESSION_KEY);
-		if (pharmacistEntity != null) {//用户信息已存储至session中
+		if (pharmacistEntity != null) {//用户信息已存储至sessionin
 			return true;
 		}
 		

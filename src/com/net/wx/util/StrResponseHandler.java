@@ -22,7 +22,7 @@ public class StrResponseHandler implements ResponseHandler<String> {
             String body = (null!= entity) ? EntityUtils.toString(entity,"UTF-8") : "";
             return body;
         } else {
-            throw new ClientProtocolException("请求失败,服务器响应代码: " + status);
+            throw new ClientProtocolException("request failed,Server response code: " + status);
         }
     }
 }

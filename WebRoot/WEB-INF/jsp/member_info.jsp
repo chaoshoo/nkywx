@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>居民健康管理服务平台</title>
+<title>Residents health management service platform</title>
 <meta name="meituan_check">
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -26,7 +26,7 @@
 <header class="navbar">
   <div class="nav-wrap-left"> <a class="react back" href="<%=path %>/index/homepage.html"><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1">
-	家庭成员信息
+	Family member information
   </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
   <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
@@ -34,7 +34,7 @@
 <div class="index-top">
 <input type="hidden" id="vip_code" name="vip_code" value="${vip.vip_code}">
 <input type="hidden" id="card_code" name="card_code" value="${vip.card_code}">
-  <div class="userinfo white"> <i class="text-icon order-card order-icon" style="background:#F5B345">卡</i>${vip.card_code}&nbsp;&nbsp;${vip.nick_name}</div>
+  <div class="userinfo white"> <i class="text-icon order-card order-icon" style="background:#F5B345">card</i>${vip.card_code}&nbsp;&nbsp;${vip.nick_name}</div>
 
   <dl class="list" style="background:none; border-top:none;border-bottom:none;">
     <dd>
@@ -47,7 +47,7 @@
 <!-- 
 <a href="" class="weui_grid">
   <div class="weui_grid_icon icon-niaosuan"> <img src="<%=path %>/img/icon_niaosuan.png" width="50" height="50"> </div>
-  <p class="weui_grid_label"> 尿酸 </p>
+  <p class="weui_grid_label"> uric acid </p>
   </a>
   -->
  </div>

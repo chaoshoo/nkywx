@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>居民健康管理服务平台</title>
+<title>Residents health management service platform</title>
 <meta name="meituan_check">
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -28,7 +28,7 @@
 <header class="navbar">
   <div class="nav-wrap-left"> <a class="react back" href="<%=path %>/index/homepage.html"><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1">
-	挂号列表
+	Registration list
   </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
   <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
@@ -42,13 +42,13 @@
        </div>
        <div id="nodata">
        <span class="weui_cell">
-       <div  class="weui_cell_bd weui_cell_primary"><span>无挂号记录</span></div>
+       <div  class="weui_cell_bd weui_cell_primary"><span>No registration records</span></div>
        </span>
        </div>
        <div class="weui-infinite-scroll" id="loadingdiv">
 	  <div class="infinite-preloader"></div>
-	    <!-- 正在加载... -->
-	    <span  id="loading">上拉加载更多</span>
+	    <!-- Being loaded... -->
+	    <span  id="loading">Pull up load more</span>
 	</div>
   </div>
 </div>

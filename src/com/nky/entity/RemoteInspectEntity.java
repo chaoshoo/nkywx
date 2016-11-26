@@ -7,16 +7,16 @@ import com.net.jfinal.TableBind;
 @TableBind(name="remote_inspect")
 public class RemoteInspectEntity  extends JFinalEntity implements java.io.Serializable{
 	private	String	code	;//	远程诊断编码
-	private	String	vip_code	;//	会员编码
-	private	String	doctor_code	;//	医生编码
-	private	String	hospital_code	;//	医院编码
-	private	Date	order_time	;//	预约时间
+	private	String	vip_code	;//	Member code
+	private	String	doctor_code	;//	Doctor code
+	private	String	hospital_code	;//	Hospital code
+	private	Date	order_time	;//	Appointment time
 	private	Date	affirm_time	;//	医生确认时间
-	private	Integer	isZd	;//	是否应诊 1,处理，0 不处理
-	private	Integer	isDeal	;//	是否处理 1,处理，0 不处理
+	private	Integer	isZd	;//	Meet? 1,Handle，0 不Handle
+	private	Integer	isDeal	;//	Whether to deal with 1,Handle，0 不Handle
 	private	Date	zd_begin_time	;//	诊断开始时间
 	private	Date	zd_end_Time	;//	诊断结束时间
-	private	Date	create_time	;//	创建时间
+	private	Date	create_time	;//	Created time
 	private String remark;
 	public String getCode() {
 		return code;

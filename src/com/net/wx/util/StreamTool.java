@@ -27,7 +27,7 @@ public class StreamTool {
             // UTF-8 解决网络传输中的字符集问题
             stream = new ByteArrayInputStream(str.getBytes("UTF-8"));
         } catch (UnsupportedEncodingException e) {
-            log.error("转换输出Stream异常,不支持的字符集!!!");
+            log.error("转换输出Streamabnormal,不支持的字符集!!!");
             log.error(e.getLocalizedMessage(), e);
         }
         return stream;

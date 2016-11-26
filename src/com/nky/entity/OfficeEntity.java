@@ -11,7 +11,7 @@ public class OfficeEntity  extends JFinalEntity implements java.io.Serializable{
 	private String name;//  '科室名字',
 	private String pic;//  '科室图片',
 	private String des;//  '科室描述',
-	private String description;//  '描述',
+	private String description;//  'description',
 	private Date create_time;
 	public Long getId() {
 		return id;

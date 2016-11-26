@@ -144,7 +144,7 @@ $(function () {
                 var weuiActionsheet = $('#weui_actionsheet');
                 weuiActionsheet.addClass('weui_actionsheet_toggle');
                 mask.show()
-                    .focus()//加focus是为了触发一次页面的重排(reflow or layout thrashing),使mask的transition动画得以正常触发
+                    .focus()//plusfocus是为了触发一次页面The重排(reflow or layout thrashing),使maskThetransition动画得以正常触发
                     .addClass('weui_fade_toggle').one('click', function () {
                     hideActionSheet(weuiActionsheet, mask);
                 });
