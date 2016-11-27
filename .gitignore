@@ -1,2 +1,2 @@
 *.class
-*/classes
+WebRoot/WEB-INF/classes
