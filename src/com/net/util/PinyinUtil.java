@@ -81,7 +81,7 @@ public class PinyinUtil {
 
 	public static void main(String[] args) {
 
-		String cnStr = "家庭1";
+		String cnStr = "Family1";
 		System.out.println(getPingYin(cnStr));
 		System.out.println(getPinYinHeadChar(cnStr));
 	}

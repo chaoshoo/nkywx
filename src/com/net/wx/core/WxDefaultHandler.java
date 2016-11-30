@@ -85,7 +85,7 @@ public class WxDefaultHandler implements WxHandler {
         OutPutMsg om = new OutPutMsg(rm);
         if (null != rm.getRecognition()) {
             om.setMsgType(WxMsgType.text.name());
-            om.setContent("您的语音消息已接收.[微笑]\n内容为："+rm.getRecognition());
+            om.setContent("Your voice message has been received..[Smile]\nContent as："+rm.getRecognition());
         } else {
             om.setMsgType(rm.getMsgType());
             om.setMediaId(rm.getMediaId());
@@ -111,9 +111,9 @@ public class WxDefaultHandler implements WxHandler {
     public OutPutMsg location(ReceiveMsg rm) {
         OutPutMsg om = new OutPutMsg(rm);
         om.setMsgType(WxMsgType.text.name());
-        om.setContent("您当前的位置:"+rm.getLabel()+
-                ",坐标:["+rm.getLatitude()+","+rm.getLongitude()+
-                "],地图缩放级别:"+rm.getScale());
+        om.setContent("Your current location:"+rm.getLabel()+
+                ",coordinate:["+rm.getLatitude()+","+rm.getLongitude()+
+                "],Map zoom level:"+rm.getScale());
         if (log.isInfoEnabled()) {
             log.info("接收到地理位置消息...");
         }
@@ -124,7 +124,7 @@ public class WxDefaultHandler implements WxHandler {
     public OutPutMsg link(ReceiveMsg rm) {
         OutPutMsg om = new OutPutMsg(rm);
         om.setMsgType(WxMsgType.text.name());
-        om.setContent(rm.getTitle()+"\n<a href=\""+rm.getUrl()+"\">点击打开</a>");
+        om.setContent(rm.getTitle()+"\n<a href=\""+rm.getUrl()+"\">Click to open</a>");
         if (log.isInfoEnabled()) {
             log.info("接收到链接消息...");
         }
@@ -159,7 +159,7 @@ public class WxDefaultHandler implements WxHandler {
         OutPutMsg om = new OutPutMsg(rm);
     	
 	        om.setMsgType(WxMsgType.text.name());
-	        om.setContent("欢迎使用平台系统.");
+	        om.setContent("Welcome platform system.");
         
         if (log.isInfoEnabled()) {
             log.info("接收到订阅消息...");
@@ -194,7 +194,7 @@ public class WxDefaultHandler implements WxHandler {
     public OutPutMsg eScanCodePush(ReceiveMsg rm) {
         OutPutMsg om = new OutPutMsg(rm);
         om.setMsgType(WxMsgType.text.name());
-        String content = "您此次用二维码扫描菜单["+rm.getEventKey()+"],扫描结果为: "+rm.getScanResult();
+        String content = "You use QR code scanning menu["+rm.getEventKey()+"],Scan results for: "+rm.getScanResult();
         om.setContent(content);
         if (log.isInfoEnabled()) {
             log.info("接收到二维码扫描事件消息...");
@@ -206,7 +206,7 @@ public class WxDefaultHandler implements WxHandler {
     public OutPutMsg eScanCodeWait(ReceiveMsg rm) {
         OutPutMsg om = new OutPutMsg(rm);
         om.setMsgType(WxMsgType.text.name());
-        String content = "您此次用扫描等待菜单["+rm.getEventKey()+"],扫描结果为: "+rm.getScanResult();
+        String content = "You use the scan to wait for the menu["+rm.getEventKey()+"],Scan results for: "+rm.getScanResult();
         om.setContent(content);
         if (log.isInfoEnabled()) {
             log.info("接收到扫码推事件且弹出“消息接收中”提示消息...");
@@ -218,7 +218,7 @@ public class WxDefaultHandler implements WxHandler {
     public OutPutMsg ePicSysPhoto(ReceiveMsg rm) {
         OutPutMsg om = new OutPutMsg(rm);
         om.setMsgType(WxMsgType.text.name());
-        String content = "您此次用系统拍照["+rm.getEventKey()+"]共发了"+rm.getCount()+"张图片,图片的MD5值为: ";
+        String content = "You use the system to take pictures["+rm.getEventKey()+"]Co hair"+rm.getCount()+"Zhang pictures,PictureMD5Value: ";
         for (PicInfo pic : rm.getPicList()) {
             content += pic.getPicMd5Sum() + ", ";
         }
@@ -233,7 +233,7 @@ public class WxDefaultHandler implements WxHandler {
     public OutPutMsg ePicPhotoOrAlbum(ReceiveMsg rm) {
         OutPutMsg om = new OutPutMsg(rm);
         om.setMsgType(WxMsgType.text.name());
-        String content = "您此次用拍照或相册["+rm.getEventKey()+"]共发了"+rm.getCount()+"张图片,图片的MD5值为: ";
+        String content = "You used to take pictures or album["+rm.getEventKey()+"]Co hair"+rm.getCount()+"Zhang pictures,PictureMD5Value: ";
         for (PicInfo pic : rm.getPicList()) {
             content += pic.getPicMd5Sum() + ", ";
         }
@@ -248,7 +248,7 @@ public class WxDefaultHandler implements WxHandler {
     public OutPutMsg ePicWeixin(ReceiveMsg rm) {
         OutPutMsg om = new OutPutMsg(rm);
         om.setMsgType(WxMsgType.text.name());
-        String content = "您此次用微信相册["+rm.getEventKey()+"]共发了"+rm.getCount()+"张图片,图片的MD5值为: ";
+        String content = "You use WeChat album["+rm.getEventKey()+"]Co hair"+rm.getCount()+"Zhang pictures,PictureMD5Value: ";
         for (PicInfo pic : rm.getPicList()) {
             content += pic.getPicMd5Sum() + ", ";
         }
@@ -263,9 +263,9 @@ public class WxDefaultHandler implements WxHandler {
     public OutPutMsg eLocationSelect(ReceiveMsg rm) {
         OutPutMsg om = new OutPutMsg(rm);
         om.setMsgType(WxMsgType.text.name());
-        om.setContent("菜单值:"+rm.getEventKey()+",您当前的位置:"+rm.getLabel()+
-                ",坐标:["+rm.getLatitude()+","+rm.getLongitude()+
-                "],地图缩放级别:"+rm.getScale()+",朋友圈:"+rm.getPoiName());
+        om.setContent("Menu value:"+rm.getEventKey()+",Your current location:"+rm.getLabel()+
+                ",coordinate:["+rm.getLatitude()+","+rm.getLongitude()+
+                "],Map zoom level:"+rm.getScale()+",Moments:"+rm.getPoiName());
         if (log.isInfoEnabled()) {
             log.info("接收到菜单地理位置消息...");
         }
@@ -289,7 +289,7 @@ public class WxDefaultHandler implements WxHandler {
     @Override
     public void eComponentVerifyTicket(ReceiveMsg rm) {
         if (log.isDebugEnabled()) {
-            log.info("接收到微信开放平台推送的组件Ticket消息...");
+            log.info("接收到微信开放平台推送的组件TicketMessage...");
         }
     }
 

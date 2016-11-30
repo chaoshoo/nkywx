@@ -55,7 +55,7 @@ public class WxBase {
             log.error("SAX解析配置文件失败!!!");
             log.error(e.getLocalizedMessage(), e);
         } catch (SAXException e) {
-            log.error("SAX异常!!!");
+            log.error("SAXabnormal!!!");
             log.error(e.getLocalizedMessage(), e);
         }
     }
@@ -382,7 +382,7 @@ public class WxBase {
                 this.wxInMsgCrt = new WXBizMsgCrypt(this.mpAct.getToken(),
                         this.mpAct.getAESKey(), this.mpAct.getAppId());
             } catch (AesException e) {
-                log.error("创建AES加密失败!!!");
+                log.error("创建AESEncryption failed!!!");
                 log.error(e.getLocalizedMessage(), e);
                 this.wxInMsgCrt = null;
             }

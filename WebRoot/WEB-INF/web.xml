@@ -10,7 +10,7 @@
     <param-value>classpath:spring/spring.xml</param-value>
   </context-param>  
 	
-	<!-- 编码格式为utf-8 -->
+	<!-- Encoding formatutf-8 -->
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter

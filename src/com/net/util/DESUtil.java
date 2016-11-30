@@ -142,7 +142,7 @@ public class DESUtil {
 
 		DESUtil des = new DESUtil();
 		// 待加密内容
-		String str = "测试内容asda可是sdadfasdfaaaf1232323aaaaa2121212&*())__+!@#$%^&~";
+		String str = "Test contentasdahoweversdadfasdfaaaf1232323aaaaa2121212&*())__+!@#$%^&~";
 		System.out.println("加密前内容为:"+str);
 		// 密码，长度要是8的倍数
 		String password = "V0QWX6T7MOY921DJUSN4E5GBZRLIKC8AFHP3";

@@ -71,7 +71,7 @@ public class WxApiImpl implements WxApi {
             result = SimpleHttpReq.get(url);
         } catch (IOException e) {
         	e.printStackTrace();
-            log.error("刷新ACCESS_TOKEN时出现异常!!!");
+            log.error("RefreshACCESS_TOKEN时出现异常!!!");
             log.error(e.getLocalizedMessage(), e);
         }
 
@@ -549,7 +549,7 @@ public class WxApiImpl implements WxApi {
         if (null != group_id
                 && !group_id.isEmpty()
                 && !to_users.isEmpty()) {
-            throw new RuntimeException("群发消息只能选择一种模式");
+            throw new RuntimeException("Group message can only choose a model");
         }
 
         String url = "";
@@ -642,7 +642,7 @@ public class WxApiImpl implements WxApi {
         try {
             result = SimpleHttpReq.get(token_url);
         } catch (IOException e) {
-            log.error("刷新JSTICKET时出现异常!!!");
+            log.error("RefreshJSTICKET时出现异常!!!");
             log.error(e.getLocalizedMessage(), e);
         }
 

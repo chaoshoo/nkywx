@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>居民健康管理服务平台</title>
+<title>Residents health management service platform</title>
 <meta name="meituan_check">
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -33,7 +33,7 @@
 <body id="account">
 <header class="navbar">
   <div class="nav-wrap-left"> <a class="react back" onclick="keshi()"><i class="text-icon icon-back"></i></a> </div>
-  <span class="nav-header h1"> 医生列表 </span> 
+  <span class="nav-header h1"> Doctor List </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
   <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
   </a> </div></header>
@@ -44,12 +44,12 @@
         <input type="hidden" name="deptid" id="deptid" value="${deptid}">
         <!-- 
       <div class="weui_search_inner"> <i class="weui_icon_search"></i>
-        <input type="search" class="weui_search_input" id="search_input" name="search_input" placeholder="搜索"  value="${search_input}"  required>
+        <input type="search" class="weui_search_input" id="search_input" name="search_input" placeholder="search"  value="${search_input}"  required>
         <a href="javascript:" class="weui_icon_clear" id="search_clear"></a> </div>
-      <label for="search_input" class="weui_search_text" id="search_text"> <i class="weui_icon_search"></i> <span>搜索</span> </label>
+      <label for="search_input" class="weui_search_text" id="search_text"> <i class="weui_icon_search"></i> <span>search</span> </label>
     -->
     </form>
-    <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a> </div>
+    <a href="javascript:" class="weui_search_cancel" id="search_cancel">cancel</a> </div>
     <input type="hidden" name="pageno" id="pageno" value="0"/>
 
     <div id="doctorlist" class="weui_panel_bd"> 
@@ -57,17 +57,17 @@
     <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
       <div class="weui_media_hd"> <img class="weui_media_appmsg_thumb" src="img/index_user_face.png" width="60" height="60"> </div>
       <div class="weui_media_bd">
-        <h4 class="weui_media_title">张医生</h4>
-        <p class="weui_media_desc">中南大学毕业，医术好，长得美。</p>
+        <h4 class="weui_media_title">Dr. Zhang</h4>
+        <p class="weui_media_desc">Graduated from Central South University，Good medicine，Beautiful。</p>
       </div>
-      <div class="weui_media_ft"> <span class="weui_media_ft_time">32岁</span> <span class="weui_media_ft_btn">预约</span> </div>
+      <div class="weui_media_ft"> <span class="weui_media_ft_time">32year</span> <span class="weui_media_ft_btn">make an appointment</span> </div>
       </a>
        -->
        </div>
        <div class="weui-infinite-scroll" id="loadingdiv">
 	  <div class="infinite-preloader"></div>
-	    <!-- 正在加载... -->
-	    <span  id="loading">上拉加载更多</span>
+	    <!-- Being loaded... -->
+	    <span  id="loading">Pull up load more</span>
 	</div>
   </div>
 </div>
@@ -128,7 +128,7 @@ function list(){
 					$("#pageno").val(pagenum);
 				}
 			}else{
-				$.alert('获取挂号网数据失败');
+				$.alert('Failed to get registeration data');
 			}
 		}
 	});

@@ -37,7 +37,7 @@ public class WxRespException extends Exception {
      */
     protected static String convertMesg(String message) {
         if (null == message || message.isEmpty()) {
-            throw new RuntimeException("网络通讯异常,请检查!!!");
+            throw new RuntimeException("Network communication exception,Please check!!!");
         }
         String err_desc = "";
         error = JSON.parseObject(message);

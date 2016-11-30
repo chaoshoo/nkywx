@@ -25,7 +25,7 @@ function pullUpAction () {
 
 		for (i=0; i<3; i++) {
 			li = document.createElement('li');
-			li.innerText = '数据'+ i;
+			li.innerText = 'data'+ i;
 			el.appendChild(li, el.childNodes[0]);
 		}
 		myScroll.refresh();		
@@ -55,30 +55,30 @@ function loaded() {
 		onScrollMove: function () {
 			if (this.y > 5 && !pullDownEl.className.match('flip')) {
 				pullDownEl.className = 'flip';
-				pullDownEl.querySelector('.pullDownLabel').innerHTML = '松手开始更新...';
+				pullDownEl.querySelector('.pullDownLabel').innerHTML = 'release to refresh...';
 				this.minScrollY = 0;
 			} else if (this.y < 5 && pullDownEl.className.match('flip')) {
 				pullDownEl.className = 'defalut';
-				pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
+				pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Pull down to refresh...';
 				this.minScrollY = -pullDownOffset;
 			} else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
 				pullUpEl.className = 'flip';
-				pullUpEl.querySelector('.pullUpLabel').innerHTML = '松手开始加载...';
+				pullUpEl.querySelector('.pullUpLabel').innerHTML = 'release to load...';
 				this.maxScrollY = this.maxScrollY;
 			} else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
 				pullUpEl.className = 'defalut';
-				pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
+				pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Pull up load more...';
 				this.maxScrollY = pullUpOffset;
 			}
 		},
 		onScrollEnd: function () {
 			if (pullDownEl.className.match('flip')) {
 				pullDownEl.className = 'loading';
-				pullDownEl.querySelector('.pullDownLabel').innerHTML = '更新中...';				
+				pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Updating...';				
 				pullDownAction();	// Execute custom function (ajax call?)
 			} else if (pullUpEl.className.match('flip')) {
 				pullUpEl.className = 'loading';
-				pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中...';				
+				pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Loading...';				
 				pullUpAction();	// Execute custom function (ajax call?)
 			}
 		}

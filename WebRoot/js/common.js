@@ -22,7 +22,7 @@ function formatBirthday(birthday){
 			if(age>100) {
 				return "";
 			}
-			return age+"岁";
+			return age+"year";
 		}else{
 			return "";
 		}
@@ -39,9 +39,9 @@ function formatBirthday(birthday){
  */
 function formatterDateTime2(date, flag) {
 	var datetime = date.getFullYear()
-			+ "-"// "年"
+			+ "-"// "year"
 			+ ((date.getMonth() + 1) > 10 ? (date.getMonth() + 1) :
-					+ (date.getMonth() + 1)) + "-"// "月"
+					+ (date.getMonth() + 1)) + "-"// "month"
 			+ (date.getDate() < 10 ? "0" + date.getDate() : date.getDate())
 			+ " ";
 	if (flag) {
@@ -65,11 +65,11 @@ function formatterDateTime2(date, flag) {
  */
 function formatterDateTime(date) {
 	var datetime = date.getFullYear()
-			+ "年"// "年"
+			+ "year"// "year"
 			+ ((date.getMonth() + 1) > 10 ? (date.getMonth() + 1) :
-					+ (date.getMonth() + 1)) + "月"// "月"
+					+ (date.getMonth() + 1)) + "month"// "month"
 			+ (date.getDate() < 10 ? "0" + date.getDate() : date.getDate())
-			+ "日";
+			+ "day";
 	
 		datetime += (date.getHours() < 10 ? "0" + date.getHours() : date
 				.getHours());

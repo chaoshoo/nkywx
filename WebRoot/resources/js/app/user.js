@@ -13,7 +13,7 @@ var USER = {
 		}
 		if(type!="guest"){
 			if (userName == "" || password == "") {
-				alert("用户名或密码不能为空！");
+				alert("User name or password can not be empty！");
 				return false;
 			}
 		}
@@ -33,7 +33,7 @@ var USER = {
 						self.location = '/doctor/doctorManager.do';
 				    } 
 				}else {
-				    $("#errormessage").html("用户名或者密码错误，请重新输入!");
+				    $("#errormessage").html("User name or password error，Please input again!");
 			    }
 			}
 		});
@@ -74,47 +74,47 @@ var USER = {
 		var accountName = $("#accountName").val();
 		var oldPassword = $("#oldPassword").val();
 		if (oldPassword == "") {
-			$("#oldPasswordError").html("请输入原密码");
+			$("#oldPasswordError").html("Please enter the original password");
 			return ;
 		}
 		if (oldPassword != ($("#hiddenPassword").val()) && oldPassword != "") {
-			$("#oldPasswordError").html("与原密码不一致，请重新输入");
+			$("#oldPasswordError").html("Inconsistent with the original password，Please input again");
 			return ;
 		}
 
 		var newPassword = $("#newPassword").val();
 		if (newPassword == "") {
-			$("#newPasswordError").html("请输入新密码");
+			$("#newPasswordError").html("Please enter a new password");
 			return ;
 		}
 		var reNewPassword = $("#reNewPassword").val();
 		if (reNewPassword== undefined   ||reNewPassword == "" || reNewPassword == null ) {
-			$("#reNewPasswordError").html("请再次输入新密码");
+			$("#reNewPasswordError").html("Please enter a new password again");
 			return ;
 		}
 		if (newPassword != reNewPassword) {
-			$("#reNewPasswordError").html("两次密码输入不一致，请重新输入");
+			$("#reNewPasswordError").html("Two password inputs are not consistent，Please input again");
 			return ;
 		}
 		var email = $("#email").val();
 		if (email == "") {
-			$("#emailError").html("请填写邮箱");
+			$("#emailError").html("Please input email");
 			return ;
 		}else{
 			 var myreg = /^(\S)+[@]{1}(\S)+[.]{1}(com|cn)$/;
 			 if(!myreg.test(email)){
-				 $("#emailError").html("请输入有效的邮箱");
+				 $("#emailError").html("Please enter a valid email address.");
 				 return ;
 			 }
 		}
 		var tel = $("#tel").val();
 		if (tel == "") {
-			$("#telError").html("请填手机号码");
+			$("#telError").html("Please input phone number.");
 			return ;
 		}else{
 			 var mobile=/^((13[0-9]{1})|15[^4,\D]{1}|18[0,5-9]{1})+\d{8}$/;
 			 if(!mobile.test(tel)){
-				 $("#telError").html("请输入有效手机号码"); 
+				 $("#telError").html("Please enter a valid phone number"); 
 				 return ;
 			 }
 		}
@@ -127,10 +127,10 @@ var USER = {
 					+ newPassword + '&email=' + email + '&tel=' + tel,
 			success : function(msg) {
 				if (msg == "fail") {
-					alert("更新失败！");
+					alert("Update failed！");
 				} else if (msg == "success") {
 					$("#hiddenPassword").attr("value", newPassword);
-					alert("更新账号信息成功！");
+					alert("Update account information successfully！");
 				}
 			}
 		});
@@ -193,20 +193,20 @@ var CHEC = {
 			var arr = new Array();
 			arr = value.split(" ");
 			if (value == "") {
-				$("#" + id + "Div").html("用户名不能为空!");
+				$("#" + id + "Div").html("User name cannot be empty!");
 				return false;
 			}
 			if (arr.length != 1) {
-				$("#" + id + "Div").html("请输入有效字符!");
+				$("#" + id + "Div").html("Please enter a valid character!");
 				return false;
 			}
 			if (value.length > 25 || value.length < 2) {
-				$("#" + id + "Div").html("请输入2-25个有效字符!");
+				$("#" + id + "Div").html("Please input2-25A valid character!");
 				return false;
 			} else {
 				var flag = RECH.recheckData(value);
 				if (flag != null && flag.length > 0) {
-					$("#" + id + "Div").html("用户名已经被注册!");
+					$("#" + id + "Div").html("User name has been registered!");
 					return false
 				}
 				return true;
@@ -216,20 +216,20 @@ var CHEC = {
 			var arr = new Array();
 			arr = value.split(" ");
 			if (value == "") {
-				$("#" + id + "Div").html("邮箱不能为空!");
+				$("#" + id + "Div").html("Mailbox cannot be empty!");
 				return false;
 			}
 			if (arr.length != 1) {
-				$("#" + id + "Div").html("请输入有效字符!");
+				$("#" + id + "Div").html("Please enter a valid character!");
 				return false;
 			}
 			if (value.length > 25 || value.length < 2) {
-				$("#" + id + "Div").html("请输入2-25个有效字符!");
+				$("#" + id + "Div").html("Please input2-25A valid character!");
 				return false;
 			} else {
 				var flag = RECH.recheckData(value);
 				if (flag != "" && flag.length > 0) {
-					$("#" + id + "Div").html("邮箱已经被注册!");
+					$("#" + id + "Div").html("Mailbox has been registered!");
 					return false
 				}
 				return true;
@@ -239,26 +239,26 @@ var CHEC = {
 			var arr = new Array();
 			arr = value.split(" ");
 			if (value == "") {
-				$("#" + id + "Div").html("密码不能为空！");
+				$("#" + id + "Div").html("Password can not be empty！");
 				return false;
 			}
 			if (arr.length != 1) {
-				$("#" + id + "Div").html("请输入有效字符!");
+				$("#" + id + "Div").html("Please enter a valid character!");
 				return false;
 			}
 			if (value.length > 25 || value.length < 2) {
-				$("#" + id + "Div").html("请输入2-25个有效字符!");
+				$("#" + id + "Div").html("Please input2-25A valid character!");
 				return false;
 			}
 			return true;
 		} else if (id == "passwordsure") {// 判断确认密码逻辑
 			var value = $("#" + id).val();
 			if (value == "") {
-				$("#" + id + "Div").html("确认密码不能为空！");
+				$("#" + id + "Div").html("Confirm password cannot be empty！");
 				return false;
 			} else {
 				if (value != $("#password").val()) {
-					$("#" + id + "Div").html("两次密码输入不一致！");
+					$("#" + id + "Div").html("Two password inputs are not consistent！");
 					return false;
 				}
 				return true;
@@ -266,7 +266,7 @@ var CHEC = {
 		} else if (id == "yzmTxt") {// 判断验证码是否为空
 			var value = $("#" + id).val();
 			if (value == "") {
-				$("#" + id + "Div").html("验证码不能为空！");
+				$("#" + id + "Div").html("Verification code cannot be empty！");
 				return false;
 			}
 		}
@@ -318,9 +318,9 @@ var REGI = {
 					self.location = "/user/myHealthCenter.do";
 
 				} else if (msg == "validationFail") {
-					$("#yzmTxtDiv").html("验证码输入不正确!");
+					$("#yzmTxtDiv").html("Verification code is not correct!");
 				} else {
-					alert("注册失败");
+					alert("Registeration failed");
 				}
 			}
 		});
@@ -361,7 +361,7 @@ var comm = {
 	checkTestUser:function(){
 		var guestId = $("#mainAccountId").val();
 		if(guestId=="1"){
-			alert("体验账号无此权限！");
+			alert("Experience account without this permission！");
 			return false;
 		}
 		return true;
