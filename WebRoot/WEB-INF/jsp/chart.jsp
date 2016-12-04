@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>居民健康管理服务平台</title>
+<title>Residents health management service platform</title>
 <meta name="meituan_check">
 <meta name="description" content="">
 <meta name="keywords" content="">
