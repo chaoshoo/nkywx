@@ -42,14 +42,14 @@
   <div class="nav-wrap-left"> <a class="react back" onclick="history.go(-1)"><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1">Appointment details</span>
  <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div>
 </header>
 <div><a class="my-account" href="#" onclick="doctor(${doctor.id})">
         <img class="avater" src="${doctor.pic}">
         <div class="user-info more more-weak">    
             <p class="uname">${doctor.name}<i class="level-icon level2"></i><span class="user-number">Job number ${doctor.code}</span></p>
-            <p> ${officename}&nbsp;${titlename}</p>
+            <p> ${officename}${titlename}</p>
             <p style=" margin-top:10px;">${hospitalname}</p>
         </div>
 </a></div>
@@ -93,7 +93,7 @@ function yuyuelist(){
 								}else if(item.CREATE_TIMESTR==undefined){
 									yuyuelisthtml += ' </div> </a> <span class="yuyue">No video</span> </dd>';
 								}else{
-									yuyuelisthtml += ' </div> </a> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Video time&nbsp;&nbsp;'+item.CREATE_TIMESTR+'</span> </dd>';
+									yuyuelisthtml += ' </div> </a> <span>Video time'+item.CREATE_TIMESTR+'</span> </dd>';
 								}
 				            
 			 });

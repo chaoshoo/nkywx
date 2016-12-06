@@ -35,7 +35,7 @@
   <div class="nav-wrap-left"> <a class="react back" onclick="keshi()"><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1"> Doctor List </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div></header>
 <div class="cur-control-con" >
   <div class="weui_search_bar" id="search_bar">

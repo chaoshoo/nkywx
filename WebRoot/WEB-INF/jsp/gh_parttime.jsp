@@ -32,7 +32,7 @@
   <div class="nav-wrap-left"> <a class="react back" onclick="history.go(-1)"><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1"> Doctor scheduling list </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div></header>
 <div class="cur-control-con" >
  <input type="hidden" name="hosid" id="hosid" value="${hosid}">

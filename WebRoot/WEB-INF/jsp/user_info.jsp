@@ -39,7 +39,7 @@
   Personal information
   </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div></header>
 
     <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
@@ -47,8 +47,8 @@
         <img class="weui_media_appmsg_thumb" src="${heard_img_url}"  alt="">
       </div>
       <div class="weui_media_bd">
-        <h4 class="weui_media_title">Registration time&nbsp;${create_timestr}</h4>
-        <h4 class="weui_media_title">Login phone number&nbsp;${vip.mobile}</h4>
+        <h4 class="weui_media_title">Registration time${create_timestr}</h4>
+        <h4 class="weui_media_title">Login phone number${vip.mobile}</h4>
       </div>
     </a>
 <form action="" id="userinfoform">
@@ -68,7 +68,7 @@
   </div>
 
 <div class="weui_cell weui_cell_select">
-<div class="weui_cell_hd"><label class="weui_label">&nbsp;&nbsp;Gender</label></div>
+<div class="weui_cell_hd"><label class="weui_label">Gender</label></div>
     <div class="weui_cell_bd weui_cell_primary">
       <select class="weui_select" id="sex" name="sex" >
         <option value="">Choose</option>

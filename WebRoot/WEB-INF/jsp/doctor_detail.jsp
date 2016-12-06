@@ -31,14 +31,14 @@
   <div class="nav-wrap-left"> <a class="react back" href='javascript:history.go(-1);' ><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1">Doctor details</span>
    <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div>
 </header>
 <div><a class="my-account" href="#">
         <img class="avater" src="${doctor.pic}">
         <div class="user-info">
             <p class="uname">${doctor.name}<i class="level-icon level2"></i><span class="user-number">Job number ${doctor.code}</span></p>
-            <p> ${officename}&nbsp;${titlename}</p>
+            <p> ${officename}${titlename}</p>
             <p style=" margin-top:10px;">${hospitalname}</p>
             <div id="guanzhuno" class="guanzhu-btn" onclick="guanzhu('${doctor.code}')" >follow</div>
             <div id="guanzhuyes" class="guanzhu-btn" style="display:none" >Fowllowed</div>
@@ -75,13 +75,13 @@ function guanzhu(doctorcode){
 		dataType:"json",
 		success:function(data){
 			if(data.code == 1){
-				 $.toast("&nbsp;&nbsp;Followed", function() {
+				 $.toast("Followed", function() {
 					 console.log('close');
 					    $("#guanzhuno").hide();
 						$("#guanzhuyes").show();
 			        });
 			}else{
-				 $.toast("&nbsp;&nbsp;Follow failed", "cancel", function() {
+				 $.toast("Follow failed", "cancel", function() {
 			          console.log('close');
 			        });
 			}

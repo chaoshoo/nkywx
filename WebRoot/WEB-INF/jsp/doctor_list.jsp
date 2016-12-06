@@ -35,7 +35,7 @@
   <div class="nav-wrap-left"> <a class="react back" onclick="history.go(-1)"><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1"> Doctor List </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div></header>
 <div class="cur-control-con" >
   <div class="weui_search_bar" id="search_bar">
@@ -112,7 +112,7 @@ function list(){
 			    +'<div class="weui_media_bd">'
 			    +'<h4 class="weui_media_title">'+item.NAME+'('+item.SEXSTR+')</h4>'
 			    +'<p class="weui_media_desc">'+item.SPECIAL+'</p>'
-			    +'</div><div class="weui_media_ft"> <span class="weui_media_ft_time">'+item.HOSPITALNAME+'&nbsp;'+item.OFFICENAME+'&nbsp;'+item.TITLESTR+'</span> '
+			    +'</div><div class="weui_media_ft"> <span class="weui_media_ft_time">'+item.HOSPITALNAME+''+item.OFFICENAME+''+item.TITLESTR+'</span> '
 			    +'<span class="weui_media_ft_btn" onclick="yuyue(\''+item.CODE+'\');">make an appointment</span> </div>'
 			    +'</a>';
 			    x = x+1;

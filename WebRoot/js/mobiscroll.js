@@ -1155,7 +1155,7 @@
             hourText: 'Hours',
             minuteText: 'Minutes',
             secText: 'Seconds',
-            ampmText: '&nbsp;',
+            ampmText: '',
             nowText: 'Now',
             showNow: false,
             stepHour: 1,

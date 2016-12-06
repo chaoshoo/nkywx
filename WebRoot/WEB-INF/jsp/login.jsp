@@ -70,7 +70,7 @@
   <a  href="<%=path %>/index/toLogin.html"  class="react back"><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1">Sign in</span>
   <div class="nav-wrap-right"> <a class="react headSearch" href="#" onclick="message();"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div>
 </header>
     <div class="loginform">

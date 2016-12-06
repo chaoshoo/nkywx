@@ -590,7 +590,7 @@ a {
 		<span class="nav-header h1">register</span>
 		<div class="nav-wrap-right">
 			<a class="react headSearch" href="#" onclick="message();"> <font
-				style="font-weight: bold; font-style: italic;">&nbsp;&nbsp;</font>
+				style="font-weight: bold; font-style: italic;"></font>
 			</a>
 		</div>
 	</header>
@@ -653,7 +653,7 @@ a {
 				success : function(data) {
 					if (data.code == 1) {
 						$("#getmessage").hide();
-						$.toast("&nbsp;&nbsp;Please check SMS", function() {
+						$.toast("Please check SMS", function() {
 							console.log('close');
 						});
 					} else {
@@ -693,11 +693,11 @@ a {
 						+ "&idcard=" + idcard,
 				success : function(data) {
 					if (data.code == 1) {
-						$.toast("&nbsp;&nbsp;Registered", function() {
+						$.toast("Registered", function() {
 							location.href = "toLogin.html";
 						});
 					} else {
-						$.toast("&nbsp;&nbsp;Registeration failed", "cancel", function() {
+						$.toast("Registeration failed", "cancel", function() {
 							console.log('close');
 						});
 					}

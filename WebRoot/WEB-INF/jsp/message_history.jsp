@@ -31,7 +31,7 @@
   <div class="nav-wrap-left"> <a class="react back" href="<%=path %>/index/homepage.html"  ><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1"> Message list </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div></header>
 <div class="cur-control-con" >
   <div class="weui_search_bar" id="search_bar">
@@ -47,7 +47,7 @@
   <div id="liuyanlist" class="cur-control-con" >
       <!-- 
   <div class=" replay-item">
-  <div class="replay-item-title">I&nbsp;Sundays and holidays excepted&nbsp;12：50</div>
+  <div class="replay-item-title">I Sunday12：50</div>
   <div class="replay-item-info">Hello,，This is Xie Chen.！A few days ago, you had a physical check-up，Feeling can also，When can I come back！</div>
   </div>
   --> 

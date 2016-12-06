@@ -18,7 +18,7 @@
 			            	//WeixinJSBridge.log(res.err_msg);
 //			            	alert(JSON.stringify(res)); 
 			                if(res.err_msg == "get_brand_wcpay_request:ok"){  
-				                $.toast("&nbsp;&nbsp;Payed",  function() {
+				                $.toast("Payed",  function() {
 							          console.log('close');
 							          $.ajax({
 											url:'/nkywx/guahao/paysuccess.html?',
@@ -35,11 +35,11 @@
 										}); 
 							        });
 				            }else if(res.err_msg == "get_brand_wcpay_request:cancel"){  
-				                $.toast("&nbsp;&nbsp;User cancel payment!", "cancel", function() {
+				                $.toast("User cancel payment!", "cancel", function() {
 							          console.log('close');
 							        });
 				            }else{  
-				            	$.toast("&nbsp;&nbsp;Payment failed", "cancel", function() {
+				            	$.toast("Payment failed", "cancel", function() {
 							          console.log('close');
 							        });
 				            }

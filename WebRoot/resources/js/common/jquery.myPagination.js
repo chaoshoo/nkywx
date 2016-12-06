@@ -44,7 +44,7 @@
 					prev_on : true,
 					msg_on : true,
 					link : '#',
-					msg : '<span>&nbsp;&nbsp;jump{currText}/{sumPage}page</span>',
+					msg : '<span>jump{currText}/{sumPage}page</span>',
 					text : {
 						width : '22px'
 					}

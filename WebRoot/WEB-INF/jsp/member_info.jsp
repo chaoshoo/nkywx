@@ -29,12 +29,12 @@
 	Family member information
   </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div></header>
 <div class="index-top">
 <input type="hidden" id="vip_code" name="vip_code" value="${vip.vip_code}">
 <input type="hidden" id="card_code" name="card_code" value="${vip.card_code}">
-  <div class="userinfo white"> <i class="text-icon order-card order-icon" style="background:#F5B345">card</i>${vip.card_code}&nbsp;&nbsp;${vip.nick_name}</div>
+  <div class="userinfo white"> <i class="text-icon order-card order-icon" style="background:#F5B345">card</i>${vip.card_code}${vip.nick_name}</div>
 
   <dl class="list" style="background:none; border-top:none;border-bottom:none;">
     <dd>

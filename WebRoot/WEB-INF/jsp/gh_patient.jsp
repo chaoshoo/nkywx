@@ -41,7 +41,7 @@
   Patient information
   </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div></header>
 <form action="" id="patientform">
 <input type="hidden" name="hosid" id="hosid" value="${hosid}">
@@ -69,7 +69,7 @@
   </div>
 
 <div class="weui_cell weui_cell_select">
-<div class="weui_cell_hd"><label class="weui_label">&nbsp;&nbsp;Gender</label></div>
+<div class="weui_cell_hd"><label class="weui_label">Gender</label></div>
     <div class="weui_cell_bd weui_cell_primary">
       <select class="weui_select" id="patientsex" name="patientsex" >
         <option value="">Choose</option>

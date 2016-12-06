@@ -31,7 +31,7 @@
   Family member list
   </span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div>
   </header>
 
@@ -91,7 +91,7 @@ function memberlist(){
 				            	  //}
 				            	  memberlisthtml +=  '<img src="<%=path%>/img/cancel.png" onclick="memberdel(\''+item.vip_code+'\',\''+item.card_code+'\');" style="width:20px;margin-right:5px;display:block"> </div> '
 				              }else{
-				            	  memberlisthtml +=  '<span>Binding expired</span>&nbsp;&nbsp; <img src="<%=path%>/img/cancel.png" onclick="memberdel(\''+item.vip_code+'\',\''+item.card_code+'\');" style="width:20px;margin-right:5px;display:block"> </div> '
+				            	  memberlisthtml +=  '<span>Binding expired</span> <img src="<%=path%>/img/cancel.png" onclick="memberdel(\''+item.vip_code+'\',\''+item.card_code+'\');" style="width:20px;margin-right:5px;display:block"> </div> '
 				              }
 			 });
 			$("#memberlisthtml").html(memberlisthtml);

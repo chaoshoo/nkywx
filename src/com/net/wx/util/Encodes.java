@@ -54,7 +54,7 @@ public class Encodes {
  }
 
  /**
-  * Base64Code, URLsecurity(takeBase64InURLIllegal character'+'and'`Turn'-'and'_', seeRFC3548).
+  * Base64Code, URLsecurity(takeBase64InURLIllegal character'+'and'/'Turn'-'and'_', seeRFC3548).
   */
  public static String encodeUrlSafeBase64(byte[] input) {
   return Base64.encodeBase64URLSafeString(input);

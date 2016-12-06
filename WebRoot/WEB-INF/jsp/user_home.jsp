@@ -37,13 +37,13 @@
   <div class="nav-wrap-left"> <a class="react back" href="<%=path %>/index/homepage.html" ><i class="text-icon icon-back"></i></a> </div>
   <span class="nav-header h1">My message</span>
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div>
 </header>
 <a href="#"  style="display:block">
 <div class="index-top"> <img src="${heard_img_url}" width="100">
   <div class="username white">${vip.nick_name}</div>
-  <div class="userinfo"><span class="white">${vip.sexstr}</span>&nbsp;&nbsp;<span class="white">${vip.age}year</span>&nbsp;&nbsp;<span class="white">${vip.areaname}</span></div>
+  <div class="userinfo"><span class="white">${vip.sexstr}</span><span class="white">${vip.age}year</span><span class="white">${vip.areaname}</span></div>
 </div>
 </a>
 <dl class="list"  style=" border-top:none;border-bottom:none;">

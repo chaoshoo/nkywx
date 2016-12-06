@@ -65,7 +65,7 @@
 		</div>
 		<span class="nav-header h1"> Message details </span>
 		<div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div>
 	</header>
 
@@ -94,7 +94,7 @@
 	<div id="liuyanlist" class="cur-control-con">
 		<!-- 
   <div class=" replay-item">
-  <div class="replay-item-title">I&nbsp;Sundays and holidays excepted&nbsp;12：50</div>
+  <div class="replay-item-title">I Sunday12：50</div>
   <div class="replay-item-info">Hello,，This is Xie Chen.！A few days ago, you had a physical check-up，Feeling can also，When can I come back！</div>
   </div>
   -->
@@ -130,7 +130,7 @@ function liuyandetail(){
 			var liuyanlisthtml = "";
 			$.each(data, function(i, item){   
 				liuyanlisthtml += '<div class=" replay-item">'
-					+'<div class="replay-item-title">'+item.DOCTORNAME+'&nbsp;&nbsp;'+item.CREATE_TIMESTR+'</div>'
+					+'<div class="replay-item-title">'+item.DOCTORNAME+''+item.CREATE_TIMESTR+'</div>'
 	               +'  <div class="replay-item-info">'+item.ANSWER_CONTENT+'</div>'
 	               +'</div>';
 

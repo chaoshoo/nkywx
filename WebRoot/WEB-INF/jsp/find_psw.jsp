@@ -36,7 +36,7 @@ body{background:#fff;}
 		</div>
   <span class="nav-header h1" >Retrieve password</span> 
   <div class="nav-wrap-right"> <a class="react headSearch" href="javascript:void(0)"> 
-  <font style="font-weight:bold;font-style:italic;">&nbsp;&nbsp;</font>
+  <font style="font-weight:bold;font-style:italic;"></font>
   </a> </div>
   </header>
 
@@ -88,7 +88,7 @@ function message(){
 			success:function(data){
 				if(data.code == 1){
 					$("#getmessage").hide();
-					$.toast("&nbsp;&nbsp;Please check SMS", function() {
+					$.toast("Please check SMS", function() {
 						console.log('close');
 			        });
 				}else{
